@@ -1,0 +1,519 @@
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	body{
+		font-family: 'Montserrat', sans-serif;
+		margin: 0;
+		padding: 0;
+	}
+	h1{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 800;
+		color: #fff;
+		margin:0;
+		font-size: 100px;
+	}
+	#section0{
+		height: 100vh;
+		background: url('./imgs/section1-bg.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: relative;
+        background-position: center top;
+        width: 100%;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+		
+	}
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+    }
+    .menu-top{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+    .logo-box{
+
+    }
+    .center-box{
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        top: 50%; left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .main-btn{
+        margin: 30px 0 0 0;
+        color: #fff;
+        display: block;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 40px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 700;
+        background-color: #e08860;
+        border-radius: 50px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+    }
+    .nav-items{
+        display: flex;
+        
+    }
+    .phone{
+
+    }
+    .phone a{
+        color: #fff;
+        font-size: 32px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-shadow: 0 2px 7px rgba(0, 0, 0, 0.4);
+        
+    }
+	.callback{
+		border-radius: 50%;
+		background: url('./imgs/phone.png') #ef782b;
+		background-repeat: no-repeat;
+		background-position: center center;
+		width: 107px;
+		height: 107px;
+		position: fixed;
+		right: 20vw;
+        bottom: 10vh;
+        transition: .3s;
+        z-index: 1050;
+        box-shadow: 0 8px 11px -8px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+    }
+    .callback:hover{
+        transform: scale(1.2);
+    }
+	.fp-tableCell{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	h2{
+		color: #da6f5b;
+		font-family: Montserrat;
+		font-size: 50px;
+		font-weight: 500;
+		line-height: 40px;
+    }
+    .white {
+        color: #fff;
+    }
+	#section2{
+		background-color: #e08860;
+	}
+	.grid{
+		display: grid;
+		height: 100vh;
+	}
+	.sec-sec{
+        grid-template-areas: "title title title" ". sec-img ." "first-img sec-img third-img" "first-img second-title third-img" "first-title . third-title" ;
+        grid-template-rows: repeat(5, 1fr);
+        max-width: 1040px;
+        margin: 0 auto;
+        background-image: url('./imgs/sec2-bg.png');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: 45% 50%;
+    }
+    .third-sec{
+        grid-template-areas: "title title title title" "hand . market ." "hand-title visa market-title card" ". visa-title . card-title" ;
+        grid-template-rows: repeat(4, 1fr);
+        max-width: 1040px;
+        margin: 0 auto;
+        background-image: url('./imgs/sec3-bg.png');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: 35% 50%;
+    }
+    .hand{
+        grid-area: hand;
+        background-image: url('./imgs/hand.png');
+        background-size: 150px 150px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .market{
+        grid-area: market;
+        background-image: url('./imgs/market.png');
+        background-size: 150px 150px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .visa{
+        grid-area: visa;
+        background-image: url('./imgs/doc.png');
+        background-size: 150px 150px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .card{
+        grid-area: card;
+        background-image: url('./imgs/card.png');
+        background-size: 150px 150px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .hand-title{
+        grid-area: hand-title;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: left;
+        padding:  0  0 0 20px;
+    }
+    .market-title{
+        grid-area: market-title;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: left;
+        padding:  0  0 0 20px;
+    }
+    .visa-title{
+        grid-area: visa-title;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: left;
+        padding:  0  0 0 20px;
+    }
+    .card-title{
+        grid-area: card-title;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 40px;
+        text-align: left;
+        padding:  0  0 0 20px;
+    }
+    .title{
+        grid-area: title;
+        padding: 90px 0 40px 0;
+    }
+    .sec-img{
+        grid-area: sec-img;
+        background-image: url('./imgs/bg2-2.png');
+        background-size: 80%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .first-img{
+        grid-area: first-img;
+        background-image: url('./imgs/bg2-1.png');
+        background-size: 80%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .third-img{
+        grid-area: third-img;
+        background-image: url('./imgs/bg2-3.png');
+        background-size: 80%;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .first-title{
+        grid-area: first-title;
+        color: #1d223e;
+        font-family: Montserrat;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 40px;
+        max-width: 356px;
+        margin: 0 auto;
+    }
+    .second-title{
+        grid-area: second-title;
+        color: #1d223e;
+        font-family: Montserrat;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 40px;
+        max-width: 356px;
+        margin: 0 auto;
+    }
+    .third-title{
+        grid-area: third-title;
+        color: #1d223e;
+        font-family: Montserrat;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 40px;
+        max-width: 356px;
+        margin: 0 auto;
+    }
+	.proff{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+	.proff img {
+		width: 100%;
+		height: 100%;
+	}
+	.proffbox{
+		position: relative;
+	}
+	.details{
+		opacity: 0;
+    }
+    
+    .footer{
+        width: 100%;
+        background-color: #000000;
+    }
+    .footer-navigation{
+        display: flex;
+
+    }
+    .footer-nav{
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: 0;
+        padding: 60px 0;
+    }
+    .footer-nav li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .footer-second {
+        color: #fff;
+        display: flex;
+        margin: 0;
+        padding: 60px 0;
+        width: 50%;
+        justify-content: flex-end;
+    }
+    .footer-second li{
+        margin: 0 0 0 20px;
+    }
+    .footer-second li a {
+        color: #fff;
+        text-decoration: none;
+        
+        margin: 0 0 0 20px;
+    }
+    @media screen and (max-width: 1600px) {
+        .logo{
+            right: 2vw;
+        }
+        .callback{
+            right: 2vw;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .logo{
+            left: 2vw;
+        }
+        .phone{
+            right: 2vw;
+        }
+        h1{
+            font-size: 66px;
+        }
+        .callback{
+            right: 2vw;
+        }
+        .title {
+            font-size: 40px;
+        }
+        .sec-sec{
+            background-image: none;
+            grid-template-areas: "title title" "first-img sec-img" "first-title second-title" "third-img third-img" "third-title third-title" ;
+        }
+        .third-sec{
+            background-image: none;
+            grid-template-areas: "title title" "hand market" "hand-title market-title" "visa card" "visa-title card-title" ;
+            padding: 0 0 60px 0;
+        }
+        .hand-title{
+            padding: 0 30px;
+            text-align: center;
+        }
+        .market-title{
+            padding: 0 30px;
+            text-align: center;
+        }
+        .visa-title{
+            padding: 0 30px;
+            text-align: center;
+        }
+        .card-title{
+            padding: 0 30px;
+            text-align: center;
+        }
+        .vacancy-wrapper{
+            width: 100%;
+            
+        }
+        .vacancy-block{
+            width: 50%;
+        }
+        .footer-navigation{
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-nav{
+            padding: 40px 0;
+            width: 80%;
+            justify-content: space-evenly;
+        }
+        .footer-second{
+            padding: 0 0 40px 0;
+            justify-content: space-evenly;
+        }
+        
+      }
+      @media screen and (max-width: 768px) {
+        .menu-top{
+            flex-direction: column;
+            align-items: center;
+        }
+        .title{
+            font-size: 32px;
+        }
+        .hand-title{
+            font-size: 20px;
+        }
+        .market-title{
+            font-size: 20px;
+        }
+        .visa-title{
+            font-size: 20px;
+        }
+        .card-title{
+            font-size: 20px;
+        }
+        .vacancy-block{
+            width: 80%;
+            margin: 10px auto;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .title {
+            padding: 30px 5px;
+            font-size: 24px;
+        }
+        .logo-box a img{
+            width: 100%;
+        }
+        .first-title {
+            font-size: 15px;
+            line-height: 22px;
+        }
+        .second-title {
+            font-size: 15px;
+            line-height: 22px;
+        }
+        .third-title {
+            font-size: 15px;
+            line-height: 22px;
+        }
+        .third-sec{
+            grid-template-areas: "title" "hand" "hand-title" "market" "market-title" "visa" "visa-title" "card" "card-title";
+            grid-template-rows: none;
+        }
+        
+        .hand{
+            background-size: 60px 60px;
+            height: 60px;
+        }
+        .market{
+            background-size: 60px 60px;
+            height: 60px;
+        }
+        .visa{
+            background-size: 60px 60px;
+            height: 60px;
+        }
+        .card{
+            background-size: 60px 60px;
+            height: 60px;
+        }
+        
+        .hand-title{
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .market-title{
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .visa-title{
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .card-title{
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .sec-sec{
+            padding: 0 5px;
+        }
+        .footer-nav{
+            flex-direction: column;
+        }
+        .callback{
+            background-size: 36px;
+            width: 60px;
+            height: 60px;
+        }
+      }
+      @media screen and (max-width: 320px) {
+        h1 {
+            font-size: 50px;
+        }
+        .logo-box{
+            width: 100%;
+        }
+        .callback{
+            background-size: 24px;
+            width: 48px;
+            height: 48px;
+        }
+        .vacancy-block{
+            height: 250px;
+        }
+        .vacancy-button{
+            width: 120px;
+        }
+      }
+
+
+
+
+
+
+      grid-area: first-title;
+        color: #1d223e;
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22px;
+        max-width: 356px;
+        margin: 0 auto;

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MyForm</string>
+    <string name="txt_error_colon">Error: </string>
+    <string name="txt_plz_wait">Please waiting…</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="logout">Exit</string>
+    <string name="setting">Settings</string>
+    <string name="convertString">Converter</string>
+    <string name="map_st">Map</string>
+    <string name="schedule_st">Schedule</string>
+    <string name="txt_course">Course</string>
+
+    <string name="txt_communicate">Связь</string>
+    <string name="txt_share">Поелиться</string>
+    <string name="txt_send">Написать</string>
+
+    <string name="money_string">money</string>
+
+    <string name="exit_string">Exit: are you sure?</string>
+    <string name="yes_string">Yes!</string>
+    <string name="no_string">No</string>
+</resources>
